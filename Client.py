@@ -7,4 +7,4 @@ client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM) # Creates a IP
 client_socket.connect((HOST, PORT)) # Connect to the Server
 
 data = client_socket.recv(1024).decode() # The data recived from client (the data recived are bytes type, so we need to decode)
-print(data)
+print(data) # Show the recived data from the Server
