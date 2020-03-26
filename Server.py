@@ -10,5 +10,5 @@ server_socket.listen() # Start to listen the connections
 
 while True: # Start a while loop(infinity loop)
     client_connection, client_address = server_socket.accept() # Accept the connection
-    print(f'{client_address[0]}{client_address[1]} --> Connected') # Print who is connected
+    print(f'{client_address[0]}:{client_address[1]} --> Connected') # Print who is connected
     client_connection.send(b'Welcome to my Server!') # Send a message to the client (the message need to be bytes not str)
